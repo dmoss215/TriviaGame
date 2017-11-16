@@ -1,12 +1,19 @@
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
 .container {
-    background-color: #f3876e;
+    background-color: #f6a593;
     margin-top: 100px;
-    height: 700px;
+    height: 850px;
 }
 
 .game-name {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
 }
 
 
@@ -17,13 +24,18 @@
     height: 50px;
     width: 150px;
     margin-right: 10px;
+    margin-bottom: 10px;
     background-color: #81dff4;
 }
 
-/* form input[type="radio"] {
-    display: inline-block;    
-  } */
 
   #questions {
       display: none;
+  }
+
+  .question {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 18px;
   }
