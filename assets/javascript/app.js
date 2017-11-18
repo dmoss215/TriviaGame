@@ -17,7 +17,8 @@ $(function() {
         
                 stop();
         
-                alert("Time Up!");
+                // alert("Time Up!");
+                calculate();
               }
             }
 
@@ -39,22 +40,11 @@ $(function() {
 
     })
 
-    // ===================  Check each input for each question to see if value is correct or incorrect =====================
-    // $('#one input').on('change', function() {
-    //     // alert($('input[name=one]:checked', '#one').val());
-    //     if ($('input[name=one]:checked', '#one').val() === "correct") {
-    //         correct++;
-    //         console.log(correct);
-    //         console.log(wrong);
-    //     } else {
-    //         wrong++;
-    //         console.log(correct);
-    //         console.log(wrong);
-    //     }
-    //  });
+    // ===========   Run calculate when submit button is clicked ==========================
+    $("#submit").on('click', calculate);
 
-
-    $("#submit").on('click', function () { 
+    // ================= Function to calculate and show the number correct and wrong from selected answers =============
+    function calculate() { 
         if ($('input[name=one]:checked', '#one').val() === "correct") {
             correct++;
             console.log(correct);
@@ -128,7 +118,7 @@ $(function() {
         $('#correct-answers').append('Wrong Answers:' + wrong);
 
         console.log(correct, wrong);
-     });
+     };
 
 
       
